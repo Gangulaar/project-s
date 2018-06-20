@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sync.LocationFeederController">
+   <children>
+      <Button fx:id="sync" layoutX="525.0" layoutY="34.0" mnemonicParsing="false" onAction="#startSync" text="Sync" />
+      <Button layoutX="361.0" layoutY="34.0" mnemonicParsing="false" onAction="#selectLog" text="Select Log" />
+      <Button layoutX="361.0" layoutY="97.0" mnemonicParsing="false" onAction="#openFileChooser" text="Location" />
+      <Label layoutX="64.0" layoutY="38.0" text="Source" />
+      <Label layoutX="37.0" layoutY="101.0" text="Destination" />
+      <Label layoutX="317.0" layoutY="140.0" text="Label" />
+      <TextField fx:id="source" layoutX="107.0" layoutY="34.0" prefHeight="25.0" prefWidth="238.0" text="/home/portware/Portware/data/logs/server/BS20180530000001.log" />
+      <TextField fx:id="downDir" layoutX="107.0" layoutY="97.0" prefHeight="25.0" prefWidth="238.0" text="C:\Users\agangula\Desktop" />
+      <ProgressIndicator fx:id="progressBar" layoutX="392.0" layoutY="129.0" progress="0.0" />
+   </children>
+</AnchorPane>
